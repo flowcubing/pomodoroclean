@@ -1,0 +1,234 @@
+:root {
+    --main: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #d6d5d5;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* nav start */
+
+nav  {
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 1000;
+    background: var(--main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-long {
+    width: 260px;
+    height: auto;
+}
+
+.button-icon {
+    margin-right: 10px;
+    display: none;
+}
+
+.icon {
+    height: 35px;
+    width: auto;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links button {
+    margin: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    text-decoration: none;
+}
+
+.profile {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#profile-icon {
+    margin: 0;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: transparent;
+}
+
+#profile-image {  /* This reffers to the actual .png file, not the button, which is classified as 'profile-icon'. */
+    width: 18px;
+    height: auto;
+}
+
+#profile-dropdown {
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding: 0;
+    width: 125px;
+    height: auto;
+    border-radius: 5px;
+    text-align: left;
+    position: absolute;
+    background-color: var(--main);
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s;
+}
+
+#profile-dropdown button {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+}
+
+#profile-dropdown .normal-profile-dropdown-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top-profile-dropdown-button {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.bottom-profile-dropdown-button {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#profile-dropdown a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-links button:hover,
+#profile-icon:hover,
+#profile-dropdown button:hover {
+    background-color: #e6e6e6;
+}
+
+/* .profile-icon:focus + #profile-dropdown {
+    opacity: 1;
+    pointer-events: all;
+} */
+
+/* code above replaced by js */
+
+@media screen and (max-width:768px) {
+    .button-logo-long {
+        display: none;
+    }
+
+    .button-icon {
+        display: inline;
+    }
+
+    .nav-links button {
+        background-color: #e6e6e6;
+    }
+
+    .profile {
+        margin-right: 1.5em;
+    }
+}
+
+@media screen and (max-width:444px) {
+    .icon {
+        width: 30px;
+        height: auto;
+    }
+
+    .nav-links button {
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 15px;
+    }
+
+    #profile-image {
+        width: 15px;
+        height: auto;
+    }
+}
+
+/* nav end */
+
+.contents {
+    padding: 96px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 51px;
+    margin-bottom: 36px;
+}
+
+h3 {
+    font-size: 29px;
+}
+
+h4 {
+    font-style: italic;
+    color: #363636;
+    margin-bottom: 34px;
+}
+
+.social-links {
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.biography {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
