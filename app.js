@@ -388,10 +388,11 @@ function addButton() {
     new_button.appendChild(new_hover);
     new_hover.className = "x-hover";
 
-    new_hover.appendChild(new_x);
     new_x.src = "/images/x-icon.png";
     new_x.alt = "x";
     new_x.style = "height: 15px; width: 15px;";
+    new_hover.appendChild(new_x);
+    // changing attributes before appending?
 
     new_button.appendChild(new_button_text);
     new_button_text.className = "button-text";
